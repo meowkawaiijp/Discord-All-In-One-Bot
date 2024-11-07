@@ -5,4 +5,4 @@ class backup(commands.Cog):
         self.bot = bot
     @commands.command()
     async def backup(self,ctx,save_file_path="./config/saves/server/"):
-            await ctx.send("Hello")
+            await ctx.send(f"Hello World! {save_file_path}")
