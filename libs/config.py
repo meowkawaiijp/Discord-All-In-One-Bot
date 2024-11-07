@@ -5,7 +5,9 @@ class config():
         self._config = self.load()
     def setup(self):
       c = open(self.configpath,'w')
-      return json.load(c)
+      self._config = json.load(c)
+      self.save('token',None)
+      return self._config
     def load(self):
         if not os.path.exists(self.configpath):
             return self.setup()
