@@ -15,4 +15,3 @@ class config():
         return json.load(c)
     def save(self,name,value):
         self._config[name] = value
-        return
